@@ -19,7 +19,7 @@ The team uses a structured hierarchy to break work down across six levels:
 | 5     | **Bug**        | Captures a defect impacting expected functionality                        | Product Developer |
 | 6     | **Task**       | Represents a concrete, actionable step toward implementing a Story        | Product Developer |
 
-Each item has its own definition, lifecycle statuses, and checklist — detailed in the following files.
+Each item type is defined and governed separately to support clarity, planning, and accountability across the team.
 
 ---
 
@@ -33,54 +33,58 @@ Work items are not created in isolation. Each one has a clear **owner** and must
 - **Tasks** are the team’s daily focus — driven by Product Developers
 - **Bugs** require fast response — co-owned by Developers and Analysts
 
-Unowned, stale, or unclear items are flagged during ceremonies and cleaned up as part of ongoing backlog governance.
+Work items that are unowned, unclear, or stale are flagged during ceremonies and addressed as part of ongoing backlog health.
 
 ---
 
 ## 🔁 Lifecycle & Status
 
-Each work item follows a defined set of statuses, from draft to completion. These statuses:
+Each work item follows a defined set of statuses that reflect its lifecycle — from initial concept to delivery. These statuses:
 
-- Enable board visibility and reporting
-- Support accurate forecasting and delivery rhythm
-- Clarify what’s ready, what’s blocked, and what’s done
+- Make work visible on the board
+- Clarify what’s ready, in progress, or blocked
+- Enable better forecasting and delivery flow
 
-See [`work_item_statuses.md`](./work_item_statuses.md) for full lifecycle breakdowns by item type.
+Statuses are unique per work item type, but all follow a shared pattern of:  
+`Draft` → `Ready` → `In Progress` → `In Review` → `Done` (or equivalent stages)
 
 ---
 
 ## 📊 Work Visibility
 
-All work items are tracked in Azure DevOps, with saved queries and views tailored to each role. Scrum board columns reflect shared delivery stages:
+All work is tracked on the team board and included in sprint planning, standups, and reviews. Scrum board columns reflect common delivery states:
 
 - `To Do` → `In Progress` → `Blocked` → `In Review` → `Done`
 
-See [`board_configuration.md`](../05_tooling/board_configuration.md) for layout guidance and visibility best practices.
+Work items must always reflect their true status — this ensures accountability, prevents confusion, and supports effective delivery monitoring.
 
 ---
 
 ## ✅ Quality Gates
 
-Each work item type includes a checklist that defines what makes it “ready” or “done.” These checklists ensure that work is not just defined — it’s well-formed, testable, and deliverable.
+Each work item type has a checklist that defines what makes it “ready” to start or “done” at completion. These quality gates:
 
-Checklists are available in [`work_item_checklists.md`](./work_item_checklists.md).
+- Prevent vague or premature planning
+- Ensure delivery expectations are clear
+- Enable reliable sprint commitment
+
+No item should move forward without meeting its defined readiness checklist.
 
 ---
 
 ## 🧪 Bugs & Exceptions
 
-Bugs are treated with the same structure and discipline as Stories — with their own workflows, ownership, and tracking expectations.
-
-For handling and triage guidance, see [`bug_handling.md`](./bug_handling.md).
+Bugs are first-class work items — tracked, prioritized, and reviewed just like User Stories.  
+They must follow their own workflow, include clear documentation, and be validated before resolution.
 
 ---
 
 ## 🔄 Non-Project Work
 
-Not all valuable work falls within a Project. Maintenance, support, ad hoc requests, and exploratory efforts are tracked and classified to ensure visibility and sustainable planning.
+Not all valuable work falls within a formal Project. Maintenance, support, ad hoc tasks, and exploratory efforts are tracked as work items and properly classified.
 
-See [`non_project_work.md`](./non_project_work.md) for classification types and handling practices.
+These items are estimated, assigned, and reviewed like all other work to maintain transparency and delivery balance.
 
 ---
 
-This structure allows the team to stay focused, adaptable, and transparent — from long-term initiatives down to daily tasks.
+This structure enables the team to move from long-term initiatives to day-to-day execution with transparency, clarity, and control — across every role and scope of work.
