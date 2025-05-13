@@ -1,45 +1,33 @@
-# 📘 Scrum Documentation System
+# 🌀 Modular Scrum Framework
 
-This documentation system defines and supports the daily workflows, responsibilities, and agile practices of a globally distributed data and reporting team. It is the product of iterative design based on internal experience, structured Scrum principles, and cross-functional needs.
+This repository documents a lightweight, structured, and adaptable Scrum-inspired framework. It is designed to bring **clarity**, **accountability**, and **delivery rhythm** to teams of all types — from product development to process improvement and beyond.
 
-Its purpose is to serve as a modular, role-based, and evolving source of truth for:
-
-- Defining each role’s expectations and scope
-- Documenting and standardizing ceremonies and delivery processes
-- Providing working templates, checklists, and practical guides
-- Answering implementation questions and removing ambiguity
-
-> 📌 This documentation is derived from an internal blueprint but is intended to stand independently for onboarding, operations, and continual improvement.
-> Check the [[blueprint]]
+The framework is modular, role-neutral, and easy to adopt — whether you're forming a new agile team or improving how existing work gets done.
 
 ---
 
-## 🔹 Scrum Framework Summary
+## 🧭 Purpose
 
-The delivery model defined in this documentation is a **Scrum-like agile framework**, adapted for:
+This system exists to:
 
-- Legacy Power BI reporting environments
-- Cross-timezone, asynchronous collaboration
-- High volumes of maintenance, support, and project work
+- Provide clear roles and responsibilities
+- Define and govern work items from strategy to execution
+- Establish consistent, focused ceremonies
+- Support delivery with lightweight but essential processes
+- Enable continuous improvement through refinement and review
 
-Key concepts include:
-
-- A **6-role team structure** with clarified ownership via RACI
-- A work item breakdown: **Project → Epic → Feature → Story**/**Bug** → **Task**
-- Strong emphasis on **backlog health** and refinement ceremonies
-- Dedicated ceremonies for **strategic, functional, and tactical** refinement
-- Built-in support for **non-project work**, metrics, and WIP management
-- External escalation processes and clearly defined governance boundaries
+It prioritizes **shared understanding**, **just enough structure**, and **team-owned delivery flow**.
 
 ---
 
-## 🧭 Future Structure Overview
+## 🗂️ Folder & File Structure
 
-```
-📁 scrum_documentation/
-├── README.md                                   # Global overview and navigation guide
-│
-├── 📁 01_roles/
+The framework is split into logical folders. Each section includes a high-level overview file and supporting documentation:
+
+```plaintext
+scrum-framework/
+├─ README.md                          # This file
+├─ 01_roles/                          # Role definitions and collaboration matrix
 │   ├── _roles_overview.md
 │   ├── product_owner.md
 │   ├── scope_coordinator.md
@@ -47,55 +35,71 @@ Key concepts include:
 │   ├── scope_lead.md
 │   ├── product_developer.md
 │   ├── product_analyst.md
-│   └── role_onboarding_checklist.md
-│
-├── 📁 02_work_items/
+├─ 02_work_items/                     # Work item types, lifecycle, and ownership
 │   ├── _work_items_overview.md
-│   ├── work_item_hierarchy.md
-│   ├── work_item_statuses.md
-│   ├── work_item_checklists.md
-│   ├── bug_handling.md
-│   └── non_project_work.md
-│
-├── 📁 03_process_guides/
-│   ├── _process_guides_overview.md
+│   ├── project.md
+│   ├── epic.md
+│   ├── feature.md
+│   ├── user_story.md
+│   ├── task.md
+│   ├── bug.md
+├─ 03_ceremonies/                     # Agile ceremonies and refinement loops
+│   ├── _ceremonies_overview.md
 │   ├── sprint_planning.md
 │   ├── daily_standup.md
 │   ├── sprint_review_retrospective.md
 │   ├── refinement_sessions.md
+├─ 04_processes/                      # Core operational processes
+│   ├── _processes_overview.md
+│   ├── backlog_governance.md
+│   ├── bug_handling.md
+│   ├── definition_of_ready_done.md
 │   ├── escalation_handling.md
-│   └── wip_limits_and_metrics.md
-│
-├── 📁 04_templates/
-│   ├── _templates_overview.md
-│   ├── user_story_template.md
-│   ├── bug_report_template.md
-│   ├── task_definition_template.md
-│   ├── sprint_goal_examples.md
-│   └── refinement_agenda.md
-│
-├── 📁 05_tooling/
-│   ├── _tooling_overview.md
-│   ├── azure_devops_setup.md
-│   ├── board_configuration.md
-│   ├── saved_queries.md
-│   └── dashboards_and_metrics.md
-│
-└── 📁 99_reference/
-    ├── _reference_overview.md
-    ├── glossary.md
-    ├── raci_matrix.md
-    ├── improvement_roadmap.md
-    └── version_history.md
+│   ├── external_dependency_tracking.md
+│   ├── meeting_notes_and_decisions.md
+│   ├── non_project_work.md
+│   ├── sprint_cadence.md
+│   ├── wip_limits_and_metrics.md
+├─ 05_guides/                         # Targeted guidance for refinement activities
+│   ├── strategic_refinement_guide.md
+│   ├── functional_refinement_guide.md
+│   ├── tactical_refinement_guide.md
+
 ```
 
 ---
 
-## 📎 Usage Guidelines
+## 🧱 What This Includes
 
-- All files are modular and self-contained.
-- Each `_overview.md` file provides a local map and purpose guide.
-- This repository is designed to grow through iteration and feedback.
-- Contributions, edits, or proposals should be versioned and peer-reviewed.
+- Clear role definitions — from strategic ownership to delivery execution
+- Hierarchical work items — with defined lifecycle, ownership, and quality gates
+- Ceremonies with intent — planning, review, standups, and three-layer refinement
+- Processes that protect flow — escalation handling, backlog health, external dependencies, and more
+- Guides to support focus — structured templates for refinement at different planning levels
 
-For support or onboarding assistance, begin with your role folder and relevant ceremony in `03_process_guides/`.
+---
+
+## 🚀 Getting Started
+
+If you're onboarding or rolling this out to a team:
+
+1. Start with \_roles_overview.md and \_work_items_overview.md
+2. Review the \_ceremonies_overview.md to understand delivery rhythm
+3. Browse the \_processes_overview.md for operational clarity
+4. Use the guides in 05_guides/ for deeper support in key practices
+
+This structure is intentionally lean — it grows with your needs, not before them.
+
+---
+
+## 🧭 Guiding Principles
+
+This framework is built on:
+
+- Understanding before execution
+- Clarity over cleverness
+- Simplicity with structure
+- Reusable documentation
+- Scalable, maintainable practices
+
+It reflects real-world use and is meant to evolve as your team does.
